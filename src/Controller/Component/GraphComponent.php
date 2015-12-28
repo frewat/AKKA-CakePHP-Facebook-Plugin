@@ -410,8 +410,9 @@ class GraphComponent extends Component {
     protected function __generateUsername()
     {
 	$username = strtolower($this->FacebookFirstName . $this->FacebookLastName);
+	$usernameColumnName = $this->_configs['user_columns']['username'];
 
-	while ($this->Users->find()->where(['username' => $username])->first()) {
+	while ($this->Users->find()->where([$usernameColumnName => $username])->first()) {
 	    $username = $username . rand(0, 900);
 	}
 
