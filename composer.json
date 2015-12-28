@@ -1,5 +1,5 @@
 {
-    "name": "akkaweb/cakephp-facebook",
+    "name": "frewat/cakephp-facebook",
     "description": "CakePHP 3 Facebook Plugin",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "cakephp3", "facebook"],
@@ -19,16 +19,16 @@
     },
     "autoload": {
 	"psr-4": {
-	    "AkkaFacebook\\": "src"
+	    "FrewatAkkaFacebook\\": "src"
 	}
     },
     "autoload-dev": {
 	"psr-4": {
-	    "AkkaFacebook\\Test\\": "tests",
+	    "FrewatAkkaFacebook\\Test\\": "tests",
 	    "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
 	}
     },
     "extra": {
-	"installer-name": "AkkaFacebook"
+	"installer-name": "FrewatAkkaFacebook"
     }
 }
