@@ -239,7 +239,7 @@ class GraphComponent extends Component {
 	if ($this->FacebookSession)
 	{
 	    try {
-		$this->FacebookRequest = new FacebookRequest($this->FacebookSession, 'GET', '/me?fields=id,name,email');
+		$this->FacebookRequest = new FacebookRequest($this->FacebookSession, 'GET', '/me?fields=id,first_name,last_name,picture,email');
 		$this->FacebookResponse = $this->FacebookRequest->execute();
 		$this->FacebookGraphObject = $this->FacebookResponse->getGraphObject();
 		$this->FacebookGraphUser = $this->FacebookGraphObject->cast(GraphUser::className());
